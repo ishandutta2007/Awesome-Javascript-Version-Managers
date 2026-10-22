@@ -30,23 +30,28 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The Cloud Development Environment (CDE) and cloud workspace market is an emerging high-growth segment nested within the broader $1+ trillion global cloud services ecosystem, driven by enterprise demands for standardized, reproducible dev toolchains and AI coding agents. The sector exhibits a moderately concentrated market dynamic at the top where hyperscaler and platform giants (Microsoft/GitHub, GitLab) leverage captive developer ecosystems, yet remains fragmented across specialized, venture-backed independent CDE providers (such as Replit, StackBlitz, Coder, and Gitpod) competing on instant browser runtimes, security compliance, and self-hosted control.
 
 ## SaaS/Hosted Platforms
 
+> *Note: JavaScript version managers themselves (like `nvm` or `fnm`) operate locally in your shell rather than as standalone hosted services. However, Cloud Development Environments (CDEs) and browser runtime platforms provide fully managed, hosted SaaS toolchains that automate runtime versioning, pre-baking Node.js/JS environments, and eliminating local version drift entirely.*
 
-
-- **No dedicated SaaS platforms exist for JavaScript version management.** These tools run locally in your shell—their purpose is to manage runtime installations on your machine, not to provide hosted services. CI platforms like GitHub Actions provide their own Node setup actions (`setup-node`) that bypass local version managers entirely .
-
-
+| Platform | Starting Tier Pricing | Free Tier Limit | Company Size (Valuation / Revenue) | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[GitHub Codespaces](https://github.com/features/codespaces)** | $0.18/hour (2-core pay-as-you-go) or GitHub Team ($4/user/month) / Enterprise ($21/user/month) | 120 core hours/month (60 hours on 2-core VM) + 15 GB-months storage | **$3+ Trillion** (Parent: Microsoft market cap; GitHub acquisition $7.5B, estimated $2B+ ARR) | Cloud development environments powered by devcontainers with automated Node.js version switching and VS Code integration. |
+| **[Replit](https://replit.com)** | $20/month ($18/month billed annually) for Core plan | Basic compute (1 vCPU, 2 GiB RAM), 1 published app (sleeps after inactivity), limited daily Agent credits | **$9.0 Billion** valuation (Series C; ~$150M+ ARR) | Cloud-hosted development workspace with automated runtime detection, integrated package management, and AI coding agents. |
+| **[GitLab Workspaces](https://about.gitlab.com)** | $29/user/month (GitLab Premium, billed annually at $348/user/year) | 5 users/namespace, 400 CI/CD compute mins/month, 10 GiB storage (Remote Workspaces feature requires Premium) | **~$6.3 Billion - $9.1 Billion** market cap (Public: NASDAQ: GTLB; ~$750M FY2025 revenue) | Remote development workspaces running containerized environments with pre-pinned toolchains directly tied to GitLab CI/CD. |
+| **[StackBlitz](https://stackblitz.com)** | $25/month ($18/month billed annually) for Pro plan | Unlimited public projects, 1 MB file upload limit, full browser-based WebContainers runtime | **$700 Million** valuation (Series B; creators of Bolt.new and WebContainers) | Instant browser-based Node.js runtime environment powered by WebContainers, booting in milliseconds without local installation. |
+| **[Coder](https://coder.com)** | $35/user/month (Enterprise starting tier) | Open-source self-hosted tier is free for community use; hosted enterprise trials available | **~$380 Million - $396 Million** valuation (Series C led by KKR; $175M total raised) | Enterprise-grade cloud development environment platform provisioning secure developer workspaces across any cloud or on-prem Kubernetes cluster. |
+| **[Gitpod](https://gitpod.io)** | $20/month for Pay-as-you-go Core plan | 500 workspace credits/month (~50 hours standard workspace runtime) | **~$100 Million+** valuation (Series A $25M; pioneer in open-source & automated CDEs) | Ephemeral, automated cloud developer workspaces pre-configured with project runtimes, dependencies, and extensions. |
 
 ## Open-Source GitHub Projects
 
